@@ -50,10 +50,6 @@ A terminal UI for the ports on your machine.
 ### Cargo
 
 ```bash
-# After the first crates.io release
-cargo install zooport
-
-# Or straight from GitHub
 cargo install --git https://github.com/sprensis/zooport.git
 ```
 
@@ -67,17 +63,6 @@ cargo build --release
 ```
 
 You need a stable Rust toolchain. `cloudflared` is only needed for tunnels.
-
-### Homebrew
-
-There's no formula in this repo yet. If you publish a tap, the release workflow gives you archives named `zooport-<target>.tar.gz` (`.zip` on Windows). A formula can download the matching archive, verify the published SHA-256 checksum, and install the binary.
-
-```bash
-brew tap sprensis/tap
-brew install zooport
-```
-
-The commands above only work after you create `sprensis/homebrew-tap` and add `Formula/zooport.rb`.
 
 ## Usage
 
