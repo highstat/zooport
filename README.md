@@ -5,6 +5,7 @@
 A terminal UI for the ports on your machine.
 
 [![CI](https://github.com/sprensis/zooport/actions/workflows/ci.yml/badge.svg)](https://github.com/sprensis/zooport/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/zooport.svg)](https://crates.io/crates/zooport)
 [![License: MIT](https://img.shields.io/badge/license-MIT-ffb347.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://www.rust-lang.org)
 [![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](#platforms)
@@ -50,7 +51,7 @@ A terminal UI for the ports on your machine.
 ### Cargo
 
 ```bash
-cargo install --git https://github.com/sprensis/zooport.git
+cargo install zooport
 ```
 
 ### Prebuilt binaries
