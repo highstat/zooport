@@ -2,13 +2,14 @@
 name = "zooport"
 version = "0.1.0"
 edition = "2021"
-description = "A high-performance terminal port manager with instant Cloudflare tunnels"
+description = "A terminal UI for managing local ports and Cloudflare quick tunnels"
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/sprensis/zooport"
 homepage = "https://github.com/sprensis/zooport"
 keywords = ["tui", "ports", "terminal", "process-manager", "cloudflare"]
 categories = ["command-line-utilities", "development-tools"]
+exclude = ["demo.gif", "demo.tape", "screenshot.png", ".github"]
 
 [[bin]]
 name = "zooport"

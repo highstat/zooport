@@ -5,6 +5,7 @@
 A terminal UI for the ports on your machine.
 
 [![CI](https://github.com/sprensis/zooport/actions/workflows/ci.yml/badge.svg)](https://github.com/sprensis/zooport/actions/workflows/ci.yml)
+[![Crates.io](https://img.shields.io/crates/v/zooport.svg)](https://crates.io/crates/zooport)
 [![License: MIT](https://img.shields.io/badge/license-MIT-ffb347.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://www.rust-lang.org)
 [![Platforms](https://img.shields.io/badge/platforms-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey.svg)](#platforms)
@@ -12,7 +13,7 @@ A terminal UI for the ports on your machine.
 </div>
 
 <p align="center">
-  <img src="demo.gif" alt="zooport demo" width="900">
+  <img src="https://raw.githubusercontent.com/sprensis/zooport/main/demo.gif" alt="zooport demo" width="900">
 </p>
 
 `zooport` lists every listening TCP socket, shows the process behind it, and lets you filter, kill, restart, export, or tunnel it without leaving the terminal. It's one Rust binary. No daemon, no browser, no required config.
@@ -42,7 +43,7 @@ A terminal UI for the ports on your machine.
 ## Screenshot
 
 <p align="center">
-  <img src="screenshot.png" alt="zooport showing listening ports and the inspect panel" width="900">
+  <img src="https://raw.githubusercontent.com/sprensis/zooport/main/screenshot.png" alt="zooport showing listening ports and the inspect panel" width="900">
 </p>
 
 ## Install
@@ -50,8 +51,12 @@ A terminal UI for the ports on your machine.
 ### Cargo
 
 ```bash
-cargo install --git https://github.com/sprensis/zooport.git
+cargo install zooport
 ```
+
+### Prebuilt binaries
+
+Download the archive for your platform from [Releases](https://github.com/sprensis/zooport/releases).
 
 ### From source
 
@@ -164,7 +169,7 @@ Clipboard access depends on the desktop session. Everything else uses native pro
 
 ## Recording the demo
 
-The included [`demo.tape`](demo.tape) records a short run: it starts three Python HTTP servers, launches zooport, navigates, filters, marks a couple of rows, opens a tunnel, and shows the QR code.
+The included [`demo.tape`](https://github.com/sprensis/zooport/blob/main/demo.tape) records a short run: it starts three Python HTTP servers, launches zooport, navigates, filters, marks a couple of rows, opens a tunnel, and shows the QR code.
 
 Install VHS and cloudflared, build the release binary, then record:
 
