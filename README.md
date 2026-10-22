@@ -4,7 +4,7 @@
 
 A terminal UI for the ports on your machine.
 
-[![CI](https://github.com/sprensis/zooport/actions/workflows/ci.yml/badge.svg)](https://github.com/sprensis/zooport/actions/workflows/ci.yml)
+[![CI](https://github.com/highstat/zooport/actions/workflows/ci.yml/badge.svg)](https://github.com/highstat/zooport/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/zooport.svg)](https://crates.io/crates/zooport)
 [![License: MIT](https://img.shields.io/badge/license-MIT-ffb347.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/rust-stable-orange.svg)](https://www.rust-lang.org)
@@ -13,7 +13,7 @@ A terminal UI for the ports on your machine.
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sprensis/zooport/main/demo.gif" alt="zooport demo" width="900">
+  <img src="https://raw.githubusercontent.com/highstat/zooport/main/demo.gif" alt="zooport demo" width="900">
 </p>
 
 `zooport` lists every listening TCP socket, shows the process behind it, and lets you filter, kill, restart, export, or tunnel it without leaving the terminal. It's one Rust binary. No daemon, no browser, no required config.
@@ -43,7 +43,7 @@ A terminal UI for the ports on your machine.
 ## Screenshot
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sprensis/zooport/main/screenshot.png" alt="zooport showing listening ports and the inspect panel" width="900">
+  <img src="https://raw.githubusercontent.com/highstat/zooport/main/screenshot.png" alt="zooport showing listening ports and the inspect panel" width="900">
 </p>
 
 ## Install
@@ -56,21 +56,21 @@ cargo install zooport
 
 ### Prebuilt binaries
 
-Download the archive for your platform from [Releases](https://github.com/sprensis/zooport/releases).
+Download the archive for your platform from [Releases](https://github.com/highstat/zooport/releases).
 
 ### Homebrew
 
 macOS and Linux:
 
 ```bash
-brew tap sprensis/tap
-brew install sprensis/tap/zooport
+brew tap highstat/tap
+brew install highstat/tap/zooport
 ```
 
 ### From source
 
 ```bash
-git clone https://github.com/sprensis/zooport.git
+git clone https://github.com/highstat/zooport.git
 cd zooport
 cargo build --release
 ./target/release/zooport
