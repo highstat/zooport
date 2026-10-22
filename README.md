@@ -175,30 +175,6 @@ Invalid config falls back to defaults. It won't stop the TUI from starting.
 
 Clipboard access depends on the desktop session. Everything else uses native process and socket APIs.
 
-## Recording the demo
-
-The included [`demo.tape`](https://github.com/sprensis/zooport/blob/main/demo.tape) records a short run: it starts three Python HTTP servers, launches zooport, navigates, filters, marks a couple of rows, opens a tunnel, and shows the QR code.
-
-Install VHS and cloudflared, build the release binary, then record:
-
-```bash
-brew install vhs cloudflared
-cargo build --release
-vhs demo.tape
-```
-
-VHS needs `ttyd` and `ffmpeg`; the Homebrew package pulls both in. On Linux, `go install github.com/charmbracelet/vhs@latest` and install `ttyd` and `ffmpeg` with your package manager. The tape writes `demo.gif` to the repo root. It waits for the tunnel to become active before pressing `q`, so a slow network won't break the recording.
-
-If a recording is interrupted, kill the demo servers before retrying:
-
-```bash
-pkill -f "http.server 3000"
-pkill -f "http.server 5173"
-pkill -f "http.server 8080"
-```
-
-The tape is intentionally simple. Tune `Set FontSize`, `Set Width`, `Set Height`, `Sleep`, `Wait+Screen`, and `Set PlaybackSpeed` at the top of the file if you want different pacing or dimensions.
-
 ## How it fits together
 
 ```text

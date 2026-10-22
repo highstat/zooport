@@ -9,7 +9,7 @@ repository = "https://github.com/sprensis/zooport"
 homepage = "https://github.com/sprensis/zooport"
 keywords = ["tui", "ports", "terminal", "process-manager", "cloudflare"]
 categories = ["command-line-utilities", "development-tools"]
-exclude = ["demo.gif", "demo.tape", "screenshot.png", ".github"]
+exclude = ["demo.gif", "screenshot.png", ".github"]
 
 [[bin]]
 name = "zooport"
